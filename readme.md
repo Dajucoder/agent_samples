@@ -6,7 +6,6 @@
 
 - `agents/`: 包含具体代理实现的目录。
 - `agents/tech_scout/`: RSS 情报官代理的实现（`agent.py`、`__init__.py`）。
-- `main.py`: 运行示例代理的入口点（如需集中调度，可在此导入 `agents.tech_scout`）。
 - `requirements.txt`: 项目依赖列表。
 
 ## 快速开始
@@ -30,8 +29,9 @@
 
 3.  **运行示例代理**:
     ```bash
-    # 方式1：直接运行主入口
-    python main.py
+    # 方式1：使用 ADK Web 启动
+    cd agents
+    adk web
 
     # 方式2：单独调试 Tech Scout Agent
     python -m agents.tech_scout.agent
